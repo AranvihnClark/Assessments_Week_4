@@ -1,0 +1,27 @@
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: aliceblue;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px lightslategray;
+}
+
+.titles {
+    text-decoration: underline;
+}
+
+.divs {
+    display: flex;
+}
+
+#select-list {
+    margin: 15px;
+}
+.buttons {
+    margin: 15px;
+    border-radius: 10px;
+    border-color:cornflowerblue;
+}

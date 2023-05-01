@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <title>Back End Assessment</title>
   </head>
   <body class="container">
     <button id="complimentButton">Get a compliment</button>
+    <button id="fortuneButton">Get a fortune</button>
 
+    <h1>Learning Paths</h1>
+    <div class="divs">
+      <h3 class="titles">
+        What would you like to add to your learning career?
+      </h3>
+        <select id="select-list">
+          <option value="" selected>Choose here</option>
+          <option class="java-option">Java</option>
+          <option class="javascript-option">JavaScript</option>
+          <option class="python-option">Python</option>
+          <option class="ruby-option">Ruby</option>
+          <option class="c++-option">C++</option>
+          <option class="c#-option">C#</option>
+          <option class="php-option">PHP</option>
+          <option class="sql-option">SQL</option>
+          <option class="go-option">Go</option>
+        </select>
+    </div>
+    <div class="divs">
+      <h3 class="titles">
+        Show where to learn these languages?
+      </h3>
+      <button id="show-links-button" class="buttons">Show links?</button>
+      <button id="hide-links-button" class="buttons">Hide links?</button>
+    </div>
+    
+    <div class="divs">
+      <h3 class="titles">
+        Type the name of a language you want to remove from your leaning path:
+      </h3>
+      <input type="text" id="delete-input">
+      <button id="delete-button" class="buttons">Delete?</button>
+    </div>
+
+    <div>
+      <h3 class="titles">Select what languages you'd like to change:</h3>
+      <p>
+        Language in learning path:
+        <select id="select-option">
+          <option value="" selected>Choose here</option>
+        </select>
+      </p>
+      <p>
+        Language to replace with:
+        <select id="replace-option">
+          <option value="" selected>Choose here</option>
+          <option class="java-option">Java</option>
+          <option class="javascript-option">JavaScript</option>
+          <option class="python-option">Python</option>
+          <option class="ruby-option">Ruby</option>
+          <option class="c++-option">C++</option>
+          <option class="c#-option">C#</option>
+          <option class="php-option">PHP</option>
+          <option class="sql-option">SQL</option>
+          <option class="go-option">Go</option>
+        </select>
+      </p>
+      <p>
+        If the above changes are correct, please submit here:
+        <button id="submit-changes-button" class="buttons">Submit</button>
+      </p>
+    </div>
+
+    <div class="divs">
+      <h3 class="titles">Your current learning path:</h3>
+      <div id="career-path"></div>
+      <div id="select-link"></div>
+    </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
     
